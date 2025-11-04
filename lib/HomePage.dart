@@ -12,8 +12,18 @@ class HomePage extends StatelessWidget {
       centerTitle: true,),
       body:Center(
         child:Column(
+          mainAxisAlignment:  MainAxisAlignment.center,
           children: [
-            Image.asset("assets/images/dice1.png"),
+            Container(
+              padding: EdgeInsets.all(16.0),
+              decoration: BoxDecoration(color:Colors.red,
+              //BORDES REDONDEADOS
+              borderRadius: BorderRadius.circular(16)
+              
+              ),
+              child: Image.asset("assets/images/dice1.png",
+              height: 200,
+              width: 200,)),
           ],
         )
         )
